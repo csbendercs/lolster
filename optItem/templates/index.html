@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Lolster Home page</h1>
+
+  <p>Welcome to <em>Lolster</em> </p>
+
+<h2>Dynamic content</h2>
+
+  <p>The database has the following record counts:</p>
+  <ul>
+    <li><strong>Items:</strong> {{ num_item }}</li>
+    <li><strong>Champs:</strong> {{ num_champs }}</li>
+  </ul>
+
+{% endblock %}
