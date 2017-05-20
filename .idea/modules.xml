@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../lol_script/lol_scripts/.idea/lol_script.iml" filepath="$PROJECT_DIR$/../../lol_script/lol_scripts/.idea/lol_script.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lolster.iml" filepath="$PROJECT_DIR$/.idea/lolster.iml" />
     </modules>
   </component>

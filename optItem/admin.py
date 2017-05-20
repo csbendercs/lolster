@@ -5,5 +5,9 @@ from .models import *
 admin.site.register(Champion)
 admin.site.register(Item)
 admin.site.register(Match)
-admin.site.register(Summoner)
 admin.site.register(champPlayed)
+
+
+@admin.register(Summoner)
+class SummonerAdmin(admin.ModelAdmin):
+    list_display = ("name", "rankPos","actid")
