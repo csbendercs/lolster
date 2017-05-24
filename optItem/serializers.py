@@ -22,7 +22,7 @@ class MatchSerializer(serializers.HyperlinkedModelSerializer):
 class SummonerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Summoner
-        fields = ("url", "sumid","actid","name", "division", "rankPos", "recentMatches")
+        fields = ("url", "sumid","actid","name", "division", "leaguePoints", "recentMatches")
 
 class champPlayedSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

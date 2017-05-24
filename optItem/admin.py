@@ -10,4 +10,4 @@ admin.site.register(champPlayed)
 
 @admin.register(Summoner)
 class SummonerAdmin(admin.ModelAdmin):
-    list_display = ("name", "rankPos","actid")
+    list_display = ("name", "leaguePoints","actid")
