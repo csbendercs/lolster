@@ -29,6 +29,9 @@ class Champion(models.Model):
 
 class Match(models.Model):
     matchid = models.CharField(max_length=20)
+    # convert epoch time to datetime instance
+    dateCreated = models.DateTimeField(blank = False, null = True)
+
 
     '''
     champList = models.ManyToManyField(Champion)
@@ -53,7 +56,12 @@ class Match(models.Model):
     champ8Win = models.NullBooleanField()
     champ9Win = models.NullBooleanField()
     champ10Win = models.NullBooleanField()
+    
+    champ1lane = models.CharField(max_length = 30)
+    
     '''
+
+
     def __str__(self):
         return self.matchid
 
