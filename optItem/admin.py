@@ -4,9 +4,11 @@ from .models import *
 
 admin.site.register(Champion)
 admin.site.register(Item)
-admin.site.register(Match)
 admin.site.register(champPlayed)
 
+@admin.register(Match)
+class ItemAdmin(admin.ModelAdmin):
+    list_display = ("matchid", "dateCreated",)
 
 @admin.register(Summoner)
 class SummonerAdmin(admin.ModelAdmin):

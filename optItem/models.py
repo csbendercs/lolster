@@ -61,6 +61,9 @@ class Match(models.Model):
     
     '''
 
+    class meta:
+        ordering = ("dateCreated")
+
 
     def __str__(self):
         return self.matchid

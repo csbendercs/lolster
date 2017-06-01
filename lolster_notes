@@ -1,9 +1,10 @@
 - finish implementation of Match models fields
     - ordering based on date created
 - finish implementation of getMatchDetail, grab data from riot api and store in DB
-    - epoch time
+    - epoch time (date created)
     - win/loss from each player
     - game version
+    - itemList implementation
     -
 
 - implement various statistics from data in DB
