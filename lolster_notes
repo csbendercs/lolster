@@ -16,4 +16,40 @@
 
 
 
+- should i implement scripts into views? --> list_route()  / detail_route()
+- possibly use dataframes to store and manage data?
+
+Available Data:
+itemlist --> item 1 - 6
+win rate per summoner  --> 10 times
+lane per summoner --> 10 times
+
+===================
+
+Goals:
+
+champ vs champ (1v1 lane) [conditional probaiblity]
+
+champion counter pick - champ vs team (1v1 team) [conditional probability]
+    champ A vs each individual on opposing team - 5 statics (add to champion counter suggestion)
+
+high item pick rate [marginal probability]
+
+===================
+
+markov chain model
+Probability of winning champ A vs champ B
+
+Probability of winning champA + item 1-6 vs champ B
+
+item slot 1
+P(win) * P(item1|win)
+
+item slot 2
+p(win) * P(item1|win) * P(item2|item1)
+
+...
+
+
+
 

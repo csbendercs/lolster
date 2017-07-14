@@ -1,7 +1,7 @@
 import requests
 from optItem.models import *
 
-url_item = "https://na1.api.riotgames.com/lol/static-data/v3/items?api_key=RGAPI-c393b0ed-c0d2-4968-b03e-dd4c93ea6164"
+url_item = "https://na1.api.riotgames.com/lol/static-data/v3/items?api_key=RGAPI-17742776-9592-483a-ac52-8804556bbe1c"
 
 response = requests.get(url_item)
 itemData = response.json()
